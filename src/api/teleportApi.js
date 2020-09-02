@@ -21,7 +21,7 @@ export default {
     },
     weatherInfo(val){
         let city = val.charAt(0).toUpperCase() + val.slice(1);
-        let apiKey = '6e247ee9b0c4c6000763ff3c53cb81ac';
+        let apiKey = 'YOUR_API_KEY';
         let baseUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
         return axios.get(baseUrl)
         .then(response => {
